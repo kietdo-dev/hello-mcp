@@ -3,3 +3,11 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+div {
+  color: red;
+  background-color: #ffebee;
+  border: 1px solid red;
+  padding: 10px;
+  margin: 5px 0;
+}
