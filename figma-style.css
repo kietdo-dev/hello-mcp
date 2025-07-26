@@ -1,0 +1,422 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 1.6;
+  color: #131313;
+  background-color: #f7f7f7;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Typography */
+h1 {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 1.6;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 1.6;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* Header */
+.header {
+  background-color: #ffffff;
+  padding: 16px 0;
+  border-bottom: 1px solid #e7e8ea;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+}
+
+.youtube-icon {
+  background-color: #ff0000;
+  color: white;
+  padding: 4px 6px;
+  border-radius: 2px;
+  font-size: 12px;
+}
+
+.nav-link {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #02b7c6 0%, #01a3b1 100%);
+  color: white;
+  padding: 64px 0;
+  text-align: center;
+}
+
+.hero-title {
+  margin-bottom: 32px;
+  font-size: 36px;
+  font-weight: 900;
+}
+
+.highlight {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.hero-devices {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+.device-item {
+  font-size: 48px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 16px;
+  border-radius: 8px;
+  min-width: 80px;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.price-badge {
+  background-color: #ffec00;
+  color: #131313;
+  padding: 16px 32px;
+  border-radius: 50px;
+  display: inline-block;
+  margin-bottom: 32px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.price {
+  font-size: 32px;
+  font-weight: 900;
+}
+
+/* Buttons */
+.cta-button {
+  padding: 16px 48px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta-button.primary {
+  background-color: #f47922;
+  color: white;
+}
+
+.cta-button.primary:hover {
+  background-color: #e66610;
+}
+
+.cta-button.secondary {
+  background-color: #f47922;
+  color: white;
+  margin-top: 48px;
+}
+
+.cta-button.secondary:hover {
+  background-color: #e66610;
+}
+
+/* Steps Section */
+.steps {
+  background-color: #f0fbfc;
+  padding: 80px 0;
+}
+
+.steps-title {
+  text-align: center;
+  margin-bottom: 64px;
+  color: #131313;
+}
+
+.steps-title .number {
+  background-color: #02b7c6;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 50%;
+  margin-right: 16px;
+  font-size: 32px;
+  font-weight: 900;
+}
+
+/* Step Cards */
+.step {
+  background-color: white;
+  border-radius: 16px;
+  padding: 32px;
+  margin-bottom: 32px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.step-number {
+  background-color: #252161;
+  color: white;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 900;
+  flex-shrink: 0;
+}
+
+.step-content {
+  flex: 1;
+}
+
+.step-title {
+  color: #131313;
+  margin-bottom: 8px;
+}
+
+.step-subtitle {
+  color: #666;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.step-highlight {
+  background-color: #ffec00;
+  padding: 8px 16px;
+  border-radius: 8px;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.highlight-text {
+  font-size: 24px;
+  font-weight: 900;
+  color: #131313;
+}
+
+.step-price {
+  font-size: 20px;
+  font-weight: 700;
+  color: #131313;
+  margin-bottom: 16px;
+}
+
+.step-devices {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.device-option {
+  background-color: #f0fbfc;
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  min-width: 120px;
+  text-align: center;
+}
+
+.device-icon {
+  font-size: 32px;
+  padding: 8px;
+  background-color: #f0fbfc;
+  border-radius: 8px;
+}
+
+.device-icon.large {
+  font-size: 48px;
+  padding: 16px;
+}
+
+.step-visual {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.chart-icon {
+  font-size: 48px;
+}
+
+.guarantee-badge {
+  background-color: #02b7c6;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.step-characters {
+  display: flex;
+  gap: 16px;
+}
+
+.character {
+  font-size: 48px;
+  background-color: #f0fbfc;
+  padding: 16px;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Footer */
+.footer {
+  background-color: #ffffff;
+  padding: 48px 0;
+  border-top: 1px solid #e7e8ea;
+}
+
+.footer-content {
+  text-align: center;
+}
+
+.footer-text {
+  color: #666;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.footer-links {
+  margin: 32px 0;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+.footer-link {
+  color: #0066cc;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 700;
+  color: #131313;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 8px;
+  }
+  
+  .hero {
+    padding: 48px 0;
+  }
+  
+  .hero-title {
+    font-size: 28px;
+  }
+  
+  .hero-devices {
+    gap: 16px;
+  }
+  
+  .device-item {
+    font-size: 32px;
+    min-width: 60px;
+    min-height: 60px;
+    padding: 12px;
+  }
+  
+  .step {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .step-devices {
+    justify-content: center;
+  }
+  
+  .footer-links {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+/* Animation */
+.step {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
